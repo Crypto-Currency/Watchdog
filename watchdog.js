@@ -8,7 +8,7 @@ const bot = new Discord.Client();
 // Token for your bot, located in the Discord application console - https://discordapp.com/developers/applications/me/
 const token =config.token;
 const prefix =config.prefix;
-const logpath="/home/spider/Discord-bot/Watchdog/";
+const logpath="/home/yourname/Discord-bot/Watchdog/";
 var logname="message.log";
 try
 { //  rotate the log - it rewites to the same file each time you restart
