@@ -1,4 +1,7 @@
 {
-  "token": "this.is.where.your.token.goes",
-  "prefix": "*"
+  "token": "this.is.where-your.token.goes",
+  "prefix": "*",
+  "sqluser": "your.db.user",
+  "sqlpass": "db.user.password",
+  "sqldatabase": "WATCHDOG"
 }
