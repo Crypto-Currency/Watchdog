@@ -10,7 +10,7 @@ const bot = new Discord.Client();
 // Token for your bot, located in the Discord application console - https://discordapp.com/developers/applications/me/
 const token =config.token;
 const prefix =config.prefix;
-const logpath="/home/**yourname**/Discord-bot/Watchdog/";
+const logpath="/home/spider/Discord-bot/Watchdog/";
 
 const sqluser=config.sqluser;
 const sqlpass=config.sqlpass;
@@ -220,6 +220,11 @@ console.log("The file was saved!");
 
 //nice uniswap
 //uni-claim.io
+  if(mess.includes('myhmec'))
+  {  //https://myhmec.com/index.php
+    spam=1;
+  }
+
   if((mess.includes('airdrop'))&&(mess.includes('uniswap')))
   {
     spam=1;
@@ -250,7 +255,76 @@ console.log("The file was saved!");
     spam=1;
   }
 
+  if((mess.includes('airdrop'))&&(mess.includes('discord'))&&(mess.includes('nitro')))
+  {
+    spam=1;
+  }
 
+  if((mess.includes('airdrop'))&&(mess.includes(' collaborat')))
+  {
+    spam=1;
+  }
+
+  if(mess.includes('an exclusive air-drop event'))
+  {
+    spam=1;
+  }
+
+  if(mess.includes('who will catch this gift'))
+  {
+    spam=1;
+  }
+
+  if((mess.includes('discord'))&&(mess.includes('g6hxuemx')))
+  {
+    spam=1;
+  }
+
+  if(mess.includes('NakamigosCloaks'))
+  {
+    spam=1;
+  }
+
+  if(mess.includes('vercel.app'))
+  {
+    spam=1;
+  }
+
+  if(mess.includes('tesbz.com'))
+  {
+    spam=1;
+  }
+
+  if(mess.includes('servernux.com'))
+  {
+    spam=1;
+  }
+
+  if(mess.includes('claim-mav.network'))
+  {
+    spam=1;
+  }
+
+  if(mess.includes('emldn.com'))
+  {
+    spam=1;
+  }
+
+  if(mess.includes('linkybits.com'))
+  {
+    spam=1;
+  }
+
+  if(mess.includes('rpcthai.com'))
+  {
+    spam=1;
+  }
+
+
+   if((mess.includes('discord'))&&(mess.includes('Nd8t5UwGgK')))
+  {
+    spam=1;
+  }
 
 
 //*****************************************************************  ens spam filter
@@ -344,10 +418,12 @@ console.log("The file was saved!");
     {
       mess=server+"** banned "+message.author.username+"  "+getDateTime()+"\n";
 // temp message
-      mess=server+"** this user should be banned "+message.author.username+"  "+getDateTime()+"\n";
+//      mess=server+"** this user should be banned "+message.author.username+"  "+getDateTime()+"\n";
 //      mess=mess+"roles "+roles;
 //      mess=mess+" length "+roles.length;
 
+// temp disable ban
+      message.member.ban({reason: 'Spamming!',days: 7});
 
       logfile.write(mess);
       console.log(mess);
